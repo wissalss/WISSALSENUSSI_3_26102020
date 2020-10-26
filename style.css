@@ -1,0 +1,32 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Shrikhand', cursive;  */
+
+/* --------- General --------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* --------- Header ----------*/
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+
+/* --------- Location --------*/
+
+.location {
+    background-color: gray;
+}
+.locationtext{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+#locationp{
+    padding: 0 1rem;
+    font-family: 'Roboto', sans-serif;
+}
