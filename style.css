@@ -9,6 +9,12 @@ font-family: 'Shrikhand', cursive;  */
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
 /* --------- Header ----------*/
 
 .logo {
@@ -77,32 +83,47 @@ p {
 
 h2 {
     text-align: center;
-    margin: 2rem 0;
+    margin: 1rem 0;
+    padding: 2rem 0 1rem 0;
 }
 
 #fonctionlists {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 3rem;
 }
 
 .fonctionlist {
     background-color: #e0e0d0;
     padding: 1rem;
     border-radius: 6px;
+    box-shadow: 0 0 16px #0000002e;
+}
+
+@media screen and (max-width: 700px) {
+    #fonctionlists {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        padding: 2rem;
+    }
 }
 
 /* ---------- Restaurants --------*/
 
 #restaurant {
     background-color: #e0e0d0;
+    padding-bottom: 2rem;
 }
-.restoarticles{
+
+.restoarticles {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    row-gap: 2rem;
-    margin: 0 2rem;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    margin: 0 3rem;
 }
+
 .menuarticle {
     background-color: #fff;
     border-radius: 1.25rem;
@@ -113,13 +134,98 @@ h2 {
 }
 
 .menuimg {
-    height: 9rem;
+    height: 20rem;
     object-fit: cover;
     max-width: 100%;
     width: 100%;
     max-height: 100%;
     border-radius: 1rem 1rem 0 0;
 }
-.menucontenttext{
+
+.menucontenttext {
     display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+.menup {
+    padding-top: .5rem;
+}
+
+.menuicon {
+    font-size: 180%;
+}
+
+.menuicon:hover {}
+
+@media screen and (max-width: 700px) {
+    .restoarticles {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+        margin: 0 2rem;
+    }
+    .menuimg {
+        height: 13rem;
+        object-fit: cover;
+        max-width: 100%;
+        width: 100%;
+        max-height: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+    h2 {
+        text-align: start;
+        margin: 1rem 0;
+        padding: 2rem 0 1rem 3rem;
+    }
+    .menup {
+        padding-top: .3rem;
+    }
+    .menucontenttext {
+        padding: .5rem 1.5rem;
+    }
+}
+
+/* ---------- Footer ---------*/
+
+footer {
+    background-color: #1f1f14;
+}
+
+h4 {
+    font-family: 'Shrikhand', cursive;
+    color: #ffffff;
+    padding: 2rem 0 1.5rem 0;
+    text-align: center;
+    font-size: large;
+}
+
+.footertext {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.footerlink {
+    padding: 0 2rem;
+    color: #ffffff;
+}
+
+.footericon {
+    color: #ffffff;
+    padding-right: .5rem;
+}
+
+@media screen and (max-width: 700px) {
+    .footertext {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+    h4 {
+        text-align: start;
+        padding: 1.5rem 0 .5rem 2rem;
+    }
+    .footerlink {
+        padding-top: .5rem;
+    }
 }
