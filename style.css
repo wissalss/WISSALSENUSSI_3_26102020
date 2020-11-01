@@ -27,13 +27,20 @@ header {
 
 .logo {
     text-align: center;
-    padding: 1.5rem 0;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin: auto;
+}
+ 
+.logoimg{
+    width: 70%;
 }
 
 /* --------- Location --------*/
 
 .location {
-    background-color: #e0e0d1;
+    background-color: #EAEAEA ;
 }
 
 .locationtext {
@@ -50,7 +57,7 @@ header {
 /* ---------- Réservation ------*/
 
 #reservation {
-    background-color: #f5f5f0;
+    background-color: #F6F6F6;
 }
 
 .titre {
@@ -69,7 +76,7 @@ p {
 }
 
 .btn {
-    color: white;
+    color: #ffffff;
     font-size: medium;
     background-image: linear-gradient(to top, #9356DC, #FF79DA);
     padding: 1rem;
@@ -101,10 +108,21 @@ h3 {
 }
 
 .fonctionlist {
-    background-color: #e0e0d0;
+    background-color: #F6F6F6;
     padding: 1rem;
     border-radius: 6px;
-    box-shadow: 0 0 16px #0000002e;
+    box-shadow: 2px 4px 8px 3px #e4e4e7;
+}
+
+.nicon{
+    position: absolute;
+    /* top: 25px; */
+    left: 7rem;
+    background: #9356DC;
+    border-radius: 50%;
+    padding: 4px 8px 4px 8px;
+    font-size: 0.8em;
+    color: #FFF;
 }
 
 @media screen and (max-width: 700px) {
@@ -119,7 +137,7 @@ h3 {
 /* ---------- Restaurants --------*/
 
 #restaurant {
-    background-color: #e0e0d0;
+    background-color: #F6F6F6;
     padding-bottom: 2rem;
 }
 
@@ -212,7 +230,7 @@ h3 {
 /* ---------- Footer ---------*/
 
 footer {
-    background-color: #1f1f14;
+    background-color:#353535;
 }
 
 .footerlogo {
@@ -285,11 +303,9 @@ footer {
 }
 
 .carte {
-    /* display: flex;
-    justify-content: space-around; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 3rem;
+    column-gap: 2rem;
     padding: 0 3rem;
 }
 
@@ -312,27 +328,35 @@ footer {
 }
 
 .menucat {
-    text-align: center;
+    text-align: start;
+    padding-left: 1.5rem;
+}
+.menucat::after{
+    content: "";
+    display: block;
+    width: 10%;
     border-bottom: 3px solid #99E2D0;
-    padding-bottom: .5rem;
+    padding-top: 6px;
 }
 
+.menutext1{
+    font-weight: bold;
+}
+
+.menutext2{
+    font-size: 14px;
+    padding-top: .25rem;
+}
 .price {
     font-weight: bold;
     padding-left: 1rem;
 }
 
-@media screen and (max-width: 700px) {
-    .menucat {
-        text-align: start;
-        padding-left: 2rem;
-    }
-}
 
 .catcontent {
     background-color: #fff;
     border-radius: 1.25rem;
-    box-shadow: 0 0 16px #0000002e;
+    box-shadow: 2px 4px 8px 3px #e4e4e7;
     cursor: pointer;
     padding: 1rem 1.5rem;
     margin-bottom: 1rem;
