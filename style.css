@@ -32,15 +32,15 @@ header {
     padding-bottom: 15px;
     margin: auto;
 }
- 
-.logoimg{
-    width: 70%;
+
+.logoimg {
+    width: 60%;
 }
 
 /* --------- Location --------*/
 
 .location {
-    background-color: #EAEAEA ;
+    background-color: #EAEAEA;
 }
 
 .locationtext {
@@ -61,18 +61,19 @@ header {
 }
 
 .titre {
-    padding-top: 2rem;
+    padding: 2rem 3rem 1rem 3rem;
     text-align: center;
+    font-weight: bold;
 }
 
 p {
     text-align: center;
-    padding: 1rem 0 2rem 0;
+    padding: 0 3rem;
 }
 
 .button {
     text-align: center;
-    padding-bottom: 3rem;
+    padding: 2rem 0 3rem 0;
 }
 
 .btn {
@@ -99,6 +100,8 @@ h3 {
     text-align: center;
     margin: 1rem 0;
     padding: 2rem 0 1rem 0;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #fonctionlists {
@@ -114,9 +117,8 @@ h3 {
     box-shadow: 2px 4px 8px 3px #e4e4e7;
 }
 
-.nicon{
+.nicon {
     position: absolute;
-    /* top: 25px; */
     left: 7rem;
     background: #9356DC;
     border-radius: 50%;
@@ -130,7 +132,7 @@ h3 {
         display: flex;
         flex-direction: column;
         row-gap: 2rem;
-        padding: 2rem;
+        padding: 0 2rem;
     }
 }
 
@@ -171,6 +173,12 @@ h3 {
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem;
+}
+
+.menuh {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
 }
 
 .menup {
@@ -217,7 +225,9 @@ h3 {
     .title {
         text-align: start;
         margin: 1rem 0;
-        padding: 2rem 0 1rem 3rem;
+        padding: 2rem 0 .5rem 2rem;
+        font-weight: bold;
+        font-size: 25px;
     }
     .menup {
         padding-top: .3rem;
@@ -230,7 +240,7 @@ h3 {
 /* ---------- Footer ---------*/
 
 footer {
-    background-color:#353535;
+    background-color: #353535;
 }
 
 .footerlogo {
@@ -323,7 +333,7 @@ footer {
     padding: 2rem;
 }
 
-.menuh {
+.resto {
     font-family: 'Shrikhand', cursive;
 }
 
@@ -331,7 +341,8 @@ footer {
     text-align: start;
     padding-left: 1.5rem;
 }
-.menucat::after{
+
+.menucat::after {
     content: "";
     display: block;
     width: 10%;
@@ -339,19 +350,19 @@ footer {
     padding-top: 6px;
 }
 
-.menutext1{
+.menutext1 {
     font-weight: bold;
 }
 
-.menutext2{
+.menutext2 {
     font-size: 14px;
     padding-top: .25rem;
 }
+
 .price {
     font-weight: bold;
     padding-left: 1rem;
 }
-
 
 .catcontent {
     background-color: #fff;
