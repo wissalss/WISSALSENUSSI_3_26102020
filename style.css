@@ -385,9 +385,7 @@ footer {
     padding-top: 6px;
 }
 
-.menutext1 {
-    font-weight: bold;
-}
+/* 
 
 .menutext2 {
     font-size: 14px;
@@ -397,20 +395,76 @@ footer {
 .price {
     font-weight: bold;
     padding-left: 1rem;
+} */
+
+.fullcart {
+    border: solid 2px #F2F2F2;
+    background-color: white;
+    border-radius: 12px;
+    position: relative;
+    width: 100%;
+    margin: 20px auto 10px auto;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+    ;
 }
 
 .catcontent {
-    background-color: #fff;
-    border-radius: 1.25rem;
-    box-shadow: 2px 4px 8px 3px #e4e4e7;
-    cursor: pointer;
-    padding: 1rem 1.5rem;
-    margin-bottom: 1rem;
+    flex: 1;
+    position: relative;
+    padding: 10px;
+    line-height: 1.5rem;
 }
 
-.cattext {
+.menutext1 {
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.menutext2 {
+    font-family: "Roboto", serif;
+    font-size: 1rem;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price {
+    font-family: "Roboto", serif;
+    font-size: 1rem;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-weight: bold;
+}
+
+.item-icon {
+    background-color: #99E2D0;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width: 0%;
+    transition: 1s;
+}
+
+.fa-check-circle {
+    opacity: 0;
+    color: white;
+    font-size: 1.2rem;
+    transform: rotate(180deg);
+    transition: .8s;
+}
+
+.fullcart:hover .item-icon {
+    width: 20%;
+}
+
+.fullcart:hover .fas {
+    transform: rotate(0deg);
+    opacity: 1;
 }
 
 .btn2 {
