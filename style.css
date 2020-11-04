@@ -118,6 +118,7 @@ p {
     border-radius: 9px;
     box-shadow: 2px 4px 8px 3px #e4e4e7;
     font-weight: bold;
+    position: relative;
 }
 
 .nicon {
@@ -135,14 +136,14 @@ p {
     color: #7E7E7E;
 }
 
-.fonicon2 {
-    color: #8137db;
-    padding: 0 1rem;
+.fonctionlist:hover {
+    box-shadow: 2px 4px 8px 3px #EAEAEA;
+    background-color: #EAEAEA;
+    top: 1px;
 }
 
-.fonctionlist:hover {
-    border: 2px solid rgb(217 217 217 / 0.5);
-    background-color: #EAEAEA;
+.fonctionlist:hover .fonicon{
+    color: #8137db;
 }
 
 @media screen and (max-width: 850px) {
@@ -182,7 +183,21 @@ p {
     cursor: pointer;
     box-sizing: border-box;
     height: 100%;
-    /* z-index: -1; */
+}
+
+.menu{
+    position: relative;
+}
+.new {
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #99E2D0;
+    color: #1C977A;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: .5rem 1rem;
 }
 
 .menuimg {
@@ -193,17 +208,7 @@ p {
     max-height: 100%;
     border-radius: 1rem 1rem 0 0;
 }
-/* .new {
-    z-index: 1;
-    position: absolute;
-    top: 220px;
-    left: 80px;
-    background-color: #99E2D0;
-    color: #1C977A;
-    border-radius: 3px;
-    font-weight: bold;
-    padding: .5rem 1rem;
-} */
+
 
 .menucontenttext {
     display: flex;
@@ -441,7 +446,6 @@ footer {
     font-family: "Roboto", serif;
     font-size: 1rem;
     width: 80%;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
