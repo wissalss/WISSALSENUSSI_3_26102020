@@ -502,7 +502,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .carte {
         display: grid;
         grid-template-columns: 1fr;
@@ -546,7 +546,6 @@ footer {
     display: flex;
     cursor: pointer;
     overflow: hidden;
-    ;
 }
 
 .catcontent {
@@ -560,6 +559,8 @@ footer {
     font-family: "Roboto", serif;
     font-weight: 600;
     font-size: 1.2rem;
+    /* white-space: nowrap;
+    text-overflow: ellipsis; */
 }
 
 .menutext2 {
@@ -567,7 +568,8 @@ footer {
     font-size: 1rem;
     width: 80%;
     overflow: hidden;
-    text-overflow: ellipsis;
+    /* white-space: nowrap; 
+     text-overflow: ellipsis;  */
 }
 
 .price {
