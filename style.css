@@ -301,7 +301,7 @@ header {
 .new {
     z-index: 1;
     position: absolute;
-    top: 20px;
+    top: -10rem;
     right: 20px;
     background-color: #99E2D0;
     color: #1C977A;
@@ -310,7 +310,7 @@ header {
     padding: .5rem 1rem;
 }
 
-.menuimg {
+@media .menuimg {
     height: 20rem;
     object-fit: cover;
     max-width: 100%;
@@ -472,13 +472,6 @@ footer {
     background: #F5F5F6;
 }
 
-/* .carte {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-    padding: 0 3rem;
-} */
-
 @media screen and (min-width: 1024px) {
     .carte {
         display: flex;
@@ -487,27 +480,12 @@ footer {
         justify-content: space-around;
         align-items: flex-start;
         flex-wrap: nowrap;
-        /* padding-top: 20px;
-        padding-left: 30px;
-        padding-right: 20px; */
     }
 }
 
 .carte {
     padding: 1rem 2rem;
 }
-
-/* .menucat1 .menucat2 .menucat3 {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0px 20px 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    opacity: 1;
-    transform: translateY(0);
-} */
 
 .menucat1 {
     animation: slideUp 1000ms 200ms ease-in-out both;
@@ -621,6 +599,7 @@ footer {
     justify-content: center;
     width: 0%;
     transition: 1s;
+    border-radius: 0 12px 12px 0;
 }
 
 .fa-check-circle {
