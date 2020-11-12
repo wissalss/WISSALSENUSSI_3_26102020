@@ -360,9 +360,8 @@ header {
     -webkit-text-fill-color: transparent;
     opacity: 0;
     transform: scale(0);
-    transition: .3s ease; 
+    transition: .3s ease;
     -webkit-transition: .3s ease;
-
 }
 
 .menuicon:hover .menuiconfull {
@@ -483,7 +482,6 @@ footer {
     .carte {
         display: flex;
         z-index: 3;
-        /* flex-direction: row; */
         justify-content: space-around;
         align-items: flex-start;
         flex-wrap: nowrap;
@@ -591,7 +589,6 @@ footer {
 }
 
 .menupara {
-    /* margin-right: 3rem; */
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
