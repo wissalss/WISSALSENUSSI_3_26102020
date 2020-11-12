@@ -375,7 +375,7 @@ header {
     -webkit-text-stroke: 0px white;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .restoarticles {
         display: grid;
         grid-template-columns: 1fr;
@@ -481,7 +481,7 @@ footer {
     .carte {
         display: flex;
         z-index: 3;
-        flex-direction: row;
+        /* flex-direction: row; */
         justify-content: space-around;
         align-items: flex-start;
         flex-wrap: nowrap;
@@ -573,7 +573,7 @@ footer {
     font-family: "Roboto", serif;
     font-weight: bold;
     font-size: 15px;
-    padding-right: 2rem;
+    padding-right: 4rem;
     width: 80%;
     overflow: hidden;
     white-space: nowrap;
@@ -583,15 +583,17 @@ footer {
 .menutext2 {
     font-family: "Roboto", serif;
     font-size: 13px;
-    width: 80%;
+    width: calc(100% - 30px);
     display: flex;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    justify-content: space-between;
 }
 
 .menupara {
-    padding-right: 3rem;
+    /* margin-right: 3rem; */
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .price {
@@ -601,6 +603,7 @@ footer {
     right: 10px;
     bottom: 10px;
     font-weight: bold;
+    padding-left: 4rem;
 }
 
 .item-icon {
@@ -610,6 +613,7 @@ footer {
     justify-content: center;
     width: 0%;
     transition: 1s;
+    -webkit-transition: 1s;
     border-radius: 0 12px 12px 0;
 }
 
@@ -619,6 +623,7 @@ footer {
     font-size: 1.2rem;
     transform: rotate(180deg);
     transition: .8s;
+    -webkit-transition: .8s;
 }
 
 .fullcart:hover .item-icon {
