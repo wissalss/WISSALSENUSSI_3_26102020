@@ -360,7 +360,9 @@ header {
     -webkit-text-fill-color: transparent;
     opacity: 0;
     transform: scale(0);
-    transition: .3s ease;
+    transition: .3s ease; 
+    -webkit-transition: .3s ease;
+
 }
 
 .menuicon:hover .menuiconfull {
