@@ -361,8 +361,8 @@ header {
     opacity: 0;
     transform: scale(0);
     transform-origin: bottom;
-    transition: .6s ease-out;
-    -webkit-transition: .6s ease-out;
+    transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
 }
 
 .menuicon:hover .menuiconfull {
